@@ -1,8 +1,11 @@
 import Link from "next/link";
 
+
 export default async function Blogs() {
   const res = await fetch("https://jsonplaceholder.typicode.com/posts");
   const posts = await res.json();
+
+
 
   return (
     <div
